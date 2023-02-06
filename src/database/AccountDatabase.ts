@@ -2,6 +2,9 @@ import { AccountDB } from "../types";
 import { BaseDatabase } from "./BaseDatabase";
 
 export class AccountDatabase extends BaseDatabase {
+    getAccountBalance(id: string) {
+        throw new Error("Method not implemented.");
+    }
     public static TABLE_ACCOUNTS = "accounts"
 
     public async findAccounts() {
